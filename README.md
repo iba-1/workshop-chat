@@ -89,6 +89,9 @@ git push --set-upstream origin [step-numerostep]
 - Implementare la lista di messaggi nella chat con un utente (componente Message)
 
 
+## Step 1
+- Impostare come endpoint delle API il seguente url: `http://51.15.43.78:3000/`
+
 ## API
 
 Le reference alle API di rocket.chat che potrebbero interessarvi:
