@@ -27,7 +27,7 @@ npm start
 
 Nel Contest dovrete implementare la UI come da Grafica (che trovate qui sotto) e poi la integreremo con le API di Rocket.Chat.
 
-![ui-implementation](./assets/ui-implementation.png)
+![ui-implementation](./assets/Chat_1.jpg)
 
 Il Contest è diviso in 6 Step, 20 minuti per step.
 Al termine dei 20 minuti vi verrà comunicata la soluzione dello step, indipendentemente da dove siete arrivati.
