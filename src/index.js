@@ -278,7 +278,14 @@ class App extends Component {
                 <span className={`userStatus ${this.state.userStatus}`} />
               </div>
               <div className="searchBoxContainer">
-                {/* TODO Insert here the search box */}
+                <SearchBox
+                  placeholder="Seach User"
+                  onChange={e => this.setState({ searchValue: e.target.value })}
+                  value={this.state.searchValue}
+                  onSubmit={e => {
+                    e.preventDefault();
+                  }}
+                />
               </div>
               <div className="orderBy">
                 <form>
