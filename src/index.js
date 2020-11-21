@@ -350,8 +350,17 @@ class App extends Component {
                 {this.state.rooms[this.state.activeUser.username] &&
                   this.state.rooms[this.state.activeUser.username].messages.map(
                     message => {
-                      {/* TODO Insert here the messages */}
-                      return null;
+                      return (
+                        <Message
+                          key={message._id}
+                          message={message.msg}
+                          dateMessage={message.ts}
+                          received={
+                            message.u.username ===
+                            this.state.activeUser.username
+                          }
+                        />
+                      );
                     }
                   )}
               </div>
