@@ -357,7 +357,14 @@ class App extends Component {
               </div>
               {this.state.activeUser.username && (
                 <div className="sendBoxContainer">
-                  {/* TODO Insert here the sendbox */}
+                  <SendBox
+                    placeholder="Insert Message"
+                    onChange={e =>
+                      this.setState({ messageValue: e.target.value })
+                    }
+                    value={this.state.messageValue}
+                    onSubmit={this.callApiPostMessage}
+                  />
                 </div>
               )}
             </div>
