@@ -37,6 +37,9 @@ Il Workshop è diviso in 4 Step:
 1. Montaggio dei Componenti come da **Grafica**.
 2. Implementazione delle Chiamate al Backend.
 
+## Step 1
+- Impostare come endpoint delle API il seguente url: `http://51.15.43.78:3000/`
+
 ## API
 
 Le API messe a disposizione per questo Workshop sono:

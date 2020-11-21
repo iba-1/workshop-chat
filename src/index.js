@@ -119,7 +119,7 @@ class App extends Component {
         this.createDirectMessageChat(this.state.activeUser.username);
       })
       .catch(error => {
-        console.log(error);
+        console.error('Errore: ' + error);
       });
   };
 

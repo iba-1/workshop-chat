@@ -114,6 +114,7 @@ export class Api {
    */
   sendMessage({ userId, activeRoom, message }) {
     {/* TODO Implement post message api */}
+    return Promise.reject('Bisogna implementare la chiamata alle API')
   }
   
   /**
