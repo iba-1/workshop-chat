@@ -296,8 +296,35 @@ class App extends Component {
                 {this.searchUser
                   .filter(user => user.username !== this.state.user)
                   .map((user, i) => {
-                    {/* TODO Insert here the chat preview */}
-                    return null;
+                    return (
+                      <ChatPreview
+                        key={i}
+                        title={user.username}
+                        lastMessage={{
+                          message:
+                            this.state.rooms[user.username] &&
+                            this.state.rooms[user.username].lastMessage
+                              ? this.state.rooms[user.username].lastMessage.msg
+                              : '',
+                          time:
+                            this.state.rooms[user.username] &&
+                            this.state.rooms[user.username].lastMessage
+                              ? this.state.rooms[user.username].lastMessage.ts
+                              : ''
+                        }}
+                        status={user.status}
+                        active={
+                          this.state.activeUser.username === user.username
+                        }
+                        onClick={() => {
+                          this.createDirectMessageChat(user.username);
+                          this.setState({
+                            activeUser: user,
+                            messageValue: ''
+                          });
+                        }}
+                      />
+                    );
                   })}
               </div>
             </div>
