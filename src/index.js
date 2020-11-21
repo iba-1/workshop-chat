@@ -289,7 +289,14 @@ class App extends Component {
               </div>
               <div className="orderBy">
                 <form>
-                  {/* TODO Insert here the order by select */}
+                  <select
+                    value={this.state.orderByValue}
+                    onChange={e => this.onSelectOrderBy(e.target.value)}
+                  >
+                    <option value="nameDESC">Name DESC</option>
+                    <option value="nameASC">Name ASC</option>
+                    <option value="status">Status</option>
+                  </select>
                 </form>
               </div>
               <div className="chatList">
